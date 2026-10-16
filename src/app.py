@@ -21,23 +21,29 @@ app.mount("/static", StaticFiles(directory=os.path.join(Path(__file__).parent,
 
 # In-memory activity database
 activities = {
-    "Chess Club": {
-        "description": "Learn strategies and compete in chess tournaments",
-        "schedule": "Fridays, 3:30 PM - 5:00 PM",
-        "max_participants": 12,
+    "Debate Club": {
+        "description": "Build public speaking and critical thinking through team debates.",
+        "schedule": "Monday, 3:30 PM - 4:45 PM",
+        "max_participants": 24,
         "participants": ["michael@mergington.edu", "daniel@mergington.edu"]
     },
-    "Programming Class": {
-        "description": "Learn programming fundamentals and build software projects",
-        "schedule": "Tuesdays and Thursdays, 3:30 PM - 4:30 PM",
+    "Robotics": {
+        "description": "Design, code, and test robots for regional competitions.",
+        "schedule": "Tuesday, 3:30 PM - 5:00 PM",
         "max_participants": 20,
         "participants": ["emma@mergington.edu", "sophia@mergington.edu"]
     },
-    "Gym Class": {
-        "description": "Physical education and sports activities",
-        "schedule": "Mondays, Wednesdays, Fridays, 2:00 PM - 3:00 PM",
-        "max_participants": 30,
+    "Soccer": {
+        "description": "Develop teamwork and skills with practices and scrimmages.",
+        "schedule": "Wednesday, 3:45 PM - 5:15 PM",
+        "max_participants": 28,
         "participants": ["john@mergington.edu", "olivia@mergington.edu"]
+    },
+    "Art Club": {
+        "description": "Explore painting, sketching, and mixed-media creative projects.",
+        "schedule": "Thursday, 3:30 PM - 4:45 PM",
+        "max_participants": 18,
+        "participants": ["ava@mergington.edu"]
     }
 }
 
