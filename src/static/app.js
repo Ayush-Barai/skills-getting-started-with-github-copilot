@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const activitiesList = document.getElementById("activities-list");
+  const scheduleList = document.getElementById("schedule-list");
   const activitySelect = document.getElementById("activity");
   const signupForm = document.getElementById("signup-form");
   const messageDiv = document.getElementById("message");
@@ -12,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Clear loading message
       activitiesList.innerHTML = "";
+      scheduleList.innerHTML = "";
 
       // Populate activities list
       Object.entries(activities).forEach(([name, details]) => {
@@ -28,6 +30,10 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
 
         activitiesList.appendChild(activityCard);
+
+        const scheduleItem = document.createElement("li");
+        scheduleItem.innerHTML = `<strong>${name}:</strong> ${details.schedule}`;
+        scheduleList.appendChild(scheduleItem);
 
         // Add option to select dropdown
         const option = document.createElement("option");
